@@ -1,0 +1,17 @@
+/usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/contrib/streaming/hadoop-streaming-1.0.3.jar -mapper /harish_code/mapper.py -reducer /harish_code/reducer.py   -input /comedies -output /output/Word_Count_Output
+Warning: $HADOOP_HOME is deprecated.
+
+packageJobJar: [/home/training/hadoop-temp/hadoop-unjar9021142068803531683/] [] /tmp/streamjob8303373220057509435.jar tmpDir=null
+15/05/16 01:05:47 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+15/05/16 01:05:47 WARN snappy.LoadSnappy: Snappy native library not loaded
+15/05/16 01:05:47 INFO mapred.FileInputFormat: Total input paths to process : 1
+15/05/16 01:05:47 INFO streaming.StreamJob: getLocalDirs(): [/home/training/hadoop-temp/mapred/local]
+15/05/16 01:05:47 INFO streaming.StreamJob: Running job: job_201505152155_0022
+15/05/16 01:05:47 INFO streaming.StreamJob: To kill this job, run:
+15/05/16 01:05:47 INFO streaming.StreamJob: /usr/local/hadoop/libexec/../bin/hadoop job  -Dmapred.job.tracker=localhost:54311 -kill job_201505152155_0022
+15/05/16 01:05:47 INFO streaming.StreamJob: Tracking URL: http://localhost:50030/jobdetails.jsp?jobid=job_201505152155_0022
+15/05/16 01:05:48 INFO streaming.StreamJob:  map 0%  reduce 0%
+15/05/16 01:06:04 INFO streaming.StreamJob:  map 100%  reduce 0%
+15/05/16 01:06:16 INFO streaming.StreamJob:  map 100%  reduce 100%
+15/05/16 01:06:23 INFO streaming.StreamJob: Job complete: job_201505152155_0022
+15/05/16 01:06:23 INFO streaming.StreamJob: Output: /output/Word_Count_Output
